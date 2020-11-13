@@ -1,0 +1,31 @@
+<h2>Exercice 2: Pipe</h2>
+<div class="container">
+    <div class="row">
+      <div class="col-12">
+          <table class="table table-image">
+            <thead>
+              <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Image</th>
+                <th scope="col">Article Name</th>
+                <th scope="col">Author</th>
+                <th scope="col">Words</th>
+                <th scope="col">Shares</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr  *ngFor="let flower of flowers" >
+                <th scope="row">{{flower.id}}</th>
+                <td class="w-25">
+                    <img src="../../assets/images/{{flower.image | defaultImage}} " class="img-fluid img-thumbnail" alt="{{flower.name}}">
+                </td>
+                <td>{{flower.name}}</td>
+                <td>{{flower.author}}</td>
+                <td>{{flower.words}}</td>
+                <td>{{flower.shares}}</td>
+              </tr>
+            </tbody>
+          </table>   
+      </div>
+    </div>
+  </div>
