@@ -22,6 +22,7 @@
     "angular-randomcolor": "^1.0.3",
     "bootstrap": "^4.5.3",
     "rxjs": "~6.5.4",
+    "sweetalert2": "^10.10.1",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"
   },

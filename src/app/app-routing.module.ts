@@ -1,11 +1,12 @@
-import { RainbowComponent } from './rainbow/rainbow.component';
-import { AppComponent } from './app.component';
-import { TestPipeComponent } from './test-pipe/test-pipe.component';
+import { RainbowComponent } from './Exercice1/rainbow/rainbow.component';
+import { TestPipeComponent } from './Exercice2/test-pipe/test-pipe.component';
 import { HomeComponent } from './home/home.component';
 
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { TodoComponent } from './todo/todo.component';
+import { TodoComponent } from './Exercice3/todo/todo.component';
+import { EmbaucheComponent } from './Exercice4/embauche/embauche.component';
+import { CvComponent } from './Exercice4/cv/cv.component';
 
 
 
@@ -14,6 +15,7 @@ const routes: Routes = [
 { path: 'todo', component:TodoComponent},
 { path: 'testPipe', component: TestPipeComponent},
 { path: 'exercieRainbow', component: RainbowComponent},
+{ path: 'exercieCv', component: CvComponent},
 { path: '**', component:HomeComponent},
 
 ];
